@@ -1,0 +1,173 @@
+/* importing the fonts that will be used in our website */
+@import url('https://fonts.cdnfonts.com/css/sf-speedwaystar-2');
+@import url('https://fonts.cdnfonts.com/css/owen-pro');
+body {
+  background: #C7E2D9;
+  */cursor: url("images/cursor1.png"),auto;*/
+/*filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E0E6F0", endColorstr="#D3E5E9", GradientType=1 );*/
+  /*background-color:#afac9b*/
+}
+/* customizing scroll bar (code taken from W3 schools: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp) */
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #273a2b;
+  border-radius: 10px;
+}
+/* customizing headings */
+h1{
+  font-family: 'SF Speedwaystar', sans-serif;
+  font-size: 90px;
+  margin-bottom: 0px;
+  text-align:center;
+  color: #6d9891;
+}
+#mainTitle{
+  font-family: 'SF Speedwaystar', sans-serif;
+  font-size: 120px;
+  margin-bottom: 0px;
+  text-align:center;
+  color: #6d9891;
+}
+h2{
+  font-family: 'Owen Pro', sans-serif;
+  font-size: 30px;
+  text-align:center;
+  color: #486561;
+}
+h3{
+  font-family: 'Owen Pro', sans-serif;
+  font-size: 20px;
+  margin-top: 0px;
+  text-align:center;
+  color: #486561;
+}
+#userDisplay{
+  font-family: Arial;
+  font-weight: bold;
+  color: #f9f0dd;
+  font-size: 20px;
+}
+#loginDisplay{
+  font-family: Arial;
+  font-weight: bold;
+  color: #f9f0dd;
+  font-size: 20px;
+}
+/* box to hold info about what we've created */
+.container{
+  background-color: #2c443f;
+  border-radius: 20px;
+  height: 200px;
+  width: 1480px;
+  margin: 0 auto;
+}
+/* styling the text in our box */
+.container p{
+  font-family: 'Owen Pro', sans-serif;
+  text-align: center;
+  font-size: 35px;
+  color: #f9f0dd;
+  padding-top: 40px;
+  padding-left: 35px
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+/* box to hold info about the creators */
+.avatars{
+  background-color: white;
+  border-radius: 20px;
+  height: 720px;
+  width: 1800px;
+  margin: 0 auto;
+}
+.avatars h2{
+  font-family: 'SF Speedwaystar', sans-serif;
+  background-color: #8eafa8;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 100px;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 40px;
+  margin-bottom: 0px;
+}
+/*code taken from W3 schools to organize images into one row */
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 20%;
+  padding: 45px;
+}
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  margin-top: 0px;
+}
+figcaption{
+  font-family: 'Owen Pro', sans-serif;
+  text-align: center;
+  font-size: 50px;
+  color: #5d7e70;
+  margin-top: 5px;
+}
+.taskbar {
+  background-color:#425c57; 
+  color:#ebe4e1;
+  position:fixed;  
+  width:100%; 
+  left:0%; 
+  top:0%; 
+  padding:0.4%;
+  z-index:0;
+  border-spacing:6px 6px;
+}
+.taskbarLinks {
+  background-color:#6d9891;
+  font-family: 'Owen Pro', sans-serif;
+  color: #f9f0dd;
+  text-align:center;
+  font-size:200%;
+  padding:0.5%;
+  border-style:solid;
+  border-color:#6d9891;
+  border-radius:8px;
+  width:14.2857142857%;
+  transition-duration:0.4s;
+  text-decoration:none;
+}
+.taskbarUser {
+  background-color:#425c57;
+  font-family: 'Owen Pro', sans-serif;
+  color: #f9f0dd;
+  text-align:center;
+  font-size:200%;
+  padding:0.5%;
+  border-style:solid;
+  border-color: #425c57;
+  border-radius:8px;
+  width:14.2857142857%;
+  transition-duration:0.4s;
+  text-decoration:none;
+}
+.taskbarLinks a {
+  text-decoration:none;
+  color:#f9f0dd;
+  /*cursor: url("images/cursor2.png"),auto;*/
+}
+.taskbarLinks:hover {
+  background-color:#91b5af;
+  /*cursor: url("images/cursor2.png"),auto;*/
+}
